@@ -1,5 +1,5 @@
 <?php
-$base_url = '../';
+$base_url = '../../';
 include_once '../components/header.php';
 include_once '../components/navbar.php';
 ?>

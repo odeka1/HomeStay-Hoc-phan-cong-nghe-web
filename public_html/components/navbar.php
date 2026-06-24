@@ -20,7 +20,7 @@ if (!isset($base_url)) {
                     <a class="nav-link" href="<?php echo $base_url; ?>index.php">Trang Chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $base_url; ?>pages/about.php">Giới Thiệu</a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>public_html/pages/about.php">Giới Thiệu</a>
                 </li>
                 
                 <li class="nav-item dropdown">
@@ -28,7 +28,7 @@ if (!isset($base_url)) {
                         Phòng Nghỉ
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="<?php echo $base_url; ?>pages/rooms.php">Tất Cả Phòng</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $base_url; ?>public_html/pages/rooms.php">Tất Cả Phòng</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Phòng Đơn Standard</a></li>
                         <li><a class="dropdown-item" href="#">Phòng Đôi Deluxe</a></li>
@@ -37,14 +37,14 @@ if (!isset($base_url)) {
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $base_url; ?>pages/gallery.php">Thư Viện Ảnh</a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>public_html/pages/gallery.php">Thư Viện Ảnh</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $base_url; ?>pages/contact.php">Liên Hệ</a>
+                    <a class="nav-link" href="<?php echo $base_url; ?>public_html/pages/contact.php">Liên Hệ</a>
                 </li>
             </ul>
             
-            <form class="d-flex" role="search" action="<?php echo $base_url; ?>pages/rooms.php" method="GET">
+            <form class="d-flex" role="search" action="<?php echo $base_url; ?>public_html/pages/rooms.php" method="GET">
                 <input class="form-control me-2" type="search" name="search" placeholder="Tìm phòng nhanh..." aria-label="Search">
                 <button class="btn btn-outline-success text-white border-white" type="submit">Tìm</button>
             </form>
