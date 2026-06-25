@@ -17,7 +17,7 @@ if (!isset($base_url)) {
             <div class="col-12 col-sm-6 col-md-4">
                 <h5 class="fw-bold text-white mb-3">Liên Kết Nhanh</h5>
                 <ul class="list-unstyled small">
-                    <li class="mb-2"><a href="<?php echo $base_url; ?>index.php" class="link-light text-white-50 text-decoration-none custom-hover">Trang Chủ</a></li>
+                    <li class="mb-2"><a href="<?php echo $base_url; ?>public_html/index.php" class="link-light text-white-50 text-decoration-none custom-hover">Trang Chủ</a></li>
                     <li class="mb-2"><a href="<?php echo $base_url; ?>public_html/pages/about.php" class="link-light text-white-50 text-decoration-none custom-hover">Giới Thiệu</a></li>
                     <li class="mb-2"><a href="<?php echo $base_url; ?>public_html/pages/rooms.php" class="link-light text-white-50 text-decoration-none custom-hover">Phòng Nghỉ</a></li>
                     <li class="mb-2"><a href="<?php echo $base_url; ?>public_html/pages/gallery.php" class="link-light text-white-50 text-decoration-none custom-hover">Thư Viện Ảnh</a></li>
