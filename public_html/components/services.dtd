@@ -1,0 +1,6 @@
+<!ELEMENT services (service+)>
+<!ELEMENT service (name, price, description)>
+<!ATTLIST service id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>

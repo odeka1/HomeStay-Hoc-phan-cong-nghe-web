@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE services SYSTEM "services.dtd">
+<services>
+    <service id="SV001">
+        <name>Tiệc nướng BBQ ngoài trời</name>
+        <price>350000</price>
+        <description>Cung cấp bếp nướng, than và set thực phẩm tươi sống (thịt, hải sản, rau củ) tại sân vườn CozyStay.</description>
+    </service>
+    <service id="SV002">
+        <name>Tour khám phá bản địa</name>
+        <price>500000</price>
+        <description>Hướng dẫn viên bản địa dẫn đoàn tham quan các địa danh nổi tiếng và trải nghiệm văn hóa sông nước miền Tây.</description>
+    </service>
+    <service id="SV003">
+        <name>Thuê xe máy tự túc</name>
+        <price>150000</price>
+        <description>Cho thuê xe số hoặc xe tay ga đời mới (kèm 2 mũ bảo hiểm), tính giá theo ngày (24 giờ).</description>
+    </service>
+</services>
