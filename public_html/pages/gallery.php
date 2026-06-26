@@ -19,42 +19,42 @@ include_once '../components/navbar.php';
         <!-- Ảnh 1 -->
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card border-0 overflow-hidden shadow-sm h-100">
-                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600" class="img-fluid gallery-img" alt="Góc đọc sách" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                <img src="<?php echo $base_url; ?>public_html/assets/images/gallery1.png" class="img-fluid gallery-img" alt="Góc đọc sách" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
             </div>
         </div>
 
         <!-- Ảnh 2 -->
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card border-0 overflow-hidden shadow-sm h-100">
-                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=600" class="img-fluid gallery-img" alt="Phòng ngủ ấm cúng" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                <img src="<?php echo $base_url; ?>public_html/assets/images/gallery2.png" class="img-fluid gallery-img" alt="Phòng ngủ ấm cúng" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
             </div>
         </div>
 
         <!-- Ảnh 3 -->
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card border-0 overflow-hidden shadow-sm h-100">
-                <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=600" class="img-fluid gallery-img" alt="Phòng khách sinh hoạt chung" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                <img src="<?php echo $base_url; ?>public_html/assets/images/gallery3.png" class="img-fluid gallery-img" alt="Phòng khách sinh hoạt chung" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
             </div>
         </div>
 
         <!-- Ảnh 4 -->
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card border-0 overflow-hidden shadow-sm h-100">
-                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=600" class="img-fluid gallery-img" alt="Toàn cảnh khuôn viên ngoài trời" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                <img src="<?php echo $base_url; ?>public_html/assets/images/gallery4.png" class="img-fluid gallery-img" alt="Toàn cảnh khuôn viên ngoài trời" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
             </div>
         </div>
 
         <!-- Ảnh 5 -->
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card border-0 overflow-hidden shadow-sm h-100">
-                <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=600" class="img-fluid gallery-img" alt="Bàn ăn trang nhã" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                <img src="<?php echo $base_url; ?>public_html/assets/images/gallery5.png" class="img-fluid gallery-img" alt="Bàn ăn trang nhã" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
             </div>
         </div>
 
         <!-- Ảnh 6 -->
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card border-0 overflow-hidden shadow-sm h-100">
-                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=600" class="img-fluid gallery-img" alt="Khu vực bếp nấu tiện lợi" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
+                <img src="<?php echo $base_url; ?>public_html/assets/images/gallery6.png" class="img-fluid gallery-img" alt="Khu vực bếp nấu tiện lợi" style="height: 250px; object-fit: cover; transition: transform 0.3s ease;">
             </div>
         </div>
 

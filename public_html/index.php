@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 
     <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
-            <img src="<?php echo $base_url; ?>public_html/assets/images/banner1.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 1" style="height: 500px; object-fit: cover;">
+            <img src="<?php echo $base_url; ?>public_html/assets/images/banner1.png" class="d-block w-100 img-fluid" alt="Không gian Homestay 1" style="height: 500px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
                 <h2 class="fw-bold text-white">Không Gian Yên Bình & Thơ Mộng</h2>
                 <p>Nơi gác lại những lo toan để tận hưởng trọn vẹn kỳ nghỉ của bạn.</p>
@@ -30,7 +30,7 @@ $result = $conn->query($sql);
         </div>
         
         <div class="carousel-item" data-bs-interval="5000">
-            <img src="<?php echo $base_url; ?>public_html/assets/images/banner2.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 2" style="height: 500px; object-fit: cover;">
+            <img src="<?php echo $base_url; ?>public_html/assets/images/banner2.png" class="d-block w-100 img-fluid" alt="Không gian Homestay 2" style="height: 500px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
                 <h2 class="fw-bold text-white">Phòng Nghỉ Đầy Đủ Tiện Nghi</h2>
                 <p>Thiết kế tinh tế mang lại cảm giác ấm cúng như chính ngôi nhà của bạn.</p>
@@ -38,7 +38,7 @@ $result = $conn->query($sql);
         </div>
         
         <div class="carousel-item" data-bs-interval="5000">
-            <img src="<?php echo $base_url; ?>public_html/assets/images/banner3.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 3" style="height: 500px; object-fit: cover;">
+            <img src="<?php echo $base_url; ?>public_html/assets/images/banner3.png" class="d-block w-100 img-fluid" alt="Không gian Homestay 3" style="height: 500px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
                 <h2 class="fw-bold text-white">Trải Nghiệm Dịch Vụ Chu Đáo</h2>
                 <p>Hỗ trợ đặt tiệc nướng BBQ ngoài trời và các tour khám phá bản địa.</p>
