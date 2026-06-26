@@ -124,7 +124,23 @@ $result = $conn->query($sql);
 
     </div>
 </div>
-
+// phuongdong
+<div class="container my-5">
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h3 class="fw-bold text-success text-uppercase">Bảng Giá Dịch Vụ Đi Kèm</h3>
+            <p class="text-muted small">Thông tin dịch vụ được cập nhật tự động từ hệ thống dữ liệu chuẩn hóa XML</p>
+        </div>
+    </div>
+    
+    <div id="xml-services-table-container">
+        <div class="text-center my-3 text-muted">
+            <div class="spinner-border spinner-border-sm text-success me-2" role="status"></div>
+            Đang tải dữ liệu dịch vụ từ hệ thống...
+        </div>
+    </div>
+</div>
+//phuongdong
 <?php
 // Nhúng chân trang hệ thống
 include_once '../components/footer.php';

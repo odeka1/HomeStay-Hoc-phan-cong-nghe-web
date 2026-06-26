@@ -116,7 +116,7 @@ if ($result_room && $result_room->num_rows > 0) {
             <div class="card border-0 shadow-sm p-4 p-md-5">
                 <h4 class="fw-bold text-dark mb-4">Thông Tin Đăng Ký Lưu Trú</h4>
                 
-                <form action="booking.php?id=<?php echo $room_id; ?>" method="POST" id="bookingForm">
+                <form action="booking.php?id=<?php echo $room_id; ?>" method="POST" id="bookingForm" novalidate>
                     <input type="hidden" name="room_id" value="<?php echo $room_id; ?>">
 
                     <div class="row g-3">

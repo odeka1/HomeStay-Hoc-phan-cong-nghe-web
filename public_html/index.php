@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 
     <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
-            <img src="assets/images/banner1.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 1" style="height: 500px; object-fit: cover;">
+            <img src="<?php echo $base_url; ?>public_html/assets/images/banner1.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 1" style="height: 500px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
                 <h2 class="fw-bold text-white">Không Gian Yên Bình & Thơ Mộng</h2>
                 <p>Nơi gác lại những lo toan để tận hưởng trọn vẹn kỳ nghỉ của bạn.</p>
@@ -30,7 +30,7 @@ $result = $conn->query($sql);
         </div>
         
         <div class="carousel-item" data-bs-interval="5000">
-            <img src="assets/images/banner2.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 2" style="height: 500px; object-fit: cover;">
+            <img src="<?php echo $base_url; ?>public_html/assets/images/banner2.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 2" style="height: 500px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
                 <h2 class="fw-bold text-white">Phòng Nghỉ Đầy Đủ Tiện Nghi</h2>
                 <p>Thiết kế tinh tế mang lại cảm giác ấm cúng như chính ngôi nhà của bạn.</p>
@@ -38,7 +38,7 @@ $result = $conn->query($sql);
         </div>
         
         <div class="carousel-item" data-bs-interval="5000">
-            <img src="assets/images/banner3.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 3" style="height: 500px; object-fit: cover;">
+            <img src="<?php echo $base_url; ?>public_html/assets/images/banner3.jpg" class="d-block w-100 img-fluid" alt="Không gian Homestay 3" style="height: 500px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
                 <h2 class="fw-bold text-white">Trải Nghiệm Dịch Vụ Chu Đáo</h2>
                 <p>Hỗ trợ đặt tiệc nướng BBQ ngoài trời và các tour khám phá bản địa.</p>
@@ -80,14 +80,14 @@ $result = $conn->query($sql);
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
                         <!-- Đường dẫn ảnh tự động nối chuỗi với tên file lưu trong DB -->
-                        <img src="assets/images/rooms/<?php echo $row['image_name']; ?>" class="card-img-top img-fluid" alt="<?php echo $row['room_name']; ?>" style="height: 230px; object-fit: cover;">
+                        <img src="<?php echo $base_url; ?>public_html/assets/images/rooms/<?php echo $row['image_name']; ?>" class="card-img-top img-fluid" alt="<?php echo $row['room_name']; ?>" style="height: 230px; object-fit: cover;">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold"><?php echo $row['room_name']; ?></h5>
                             <p class="card-text text-muted flex-grow-1"><?php echo $row['description']; ?></p>
                             <div class="d-flex justify-content-between align-items-center mt-3">
                                 <!-- Định dạng lại hiển thị tiền tệ cho đẹp mắt -->
                                 <span class="text-danger fw-bold fs-5"><?php echo number_format($row['price'], 0, ',', '.'); ?>đ / đêm</span>
-                                <a href="pages/booking.php?id=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">Đặt Ngay</a>
+                                <a href="<?php echo $base_url; ?>public_html/pages/booking.php?id=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">Đặt Ngay</a>
                             </div>
                         </div>
                     </div>
