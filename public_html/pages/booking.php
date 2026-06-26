@@ -1,6 +1,6 @@
 <?php
 // Cấu hình đường dẫn lùi lại 1 cấp thư mục để nhận đúng tài nguyên gốc
-$base_url = '../../';
+$base_url = '../';
 
 // Nhúng các thành phần giao diện hệ thống
 include_once '../components/header.php';
@@ -85,7 +85,7 @@ if ($result_room && $result_room->num_rows > 0) {
                 <div class="card-header bg-success text-white fw-bold py-3">
                     Thông Tin Phòng Chọn
                 </div>
-                <img src="../assets/images/rooms/<?php echo $room_image; ?>" class="card-img-top img-fluid" alt="Ảnh phòng đặt" style="height: 180px; object-fit: cover;">
+                <img src="<?php echo $base_url; ?>assets/images/rooms/<?php echo $room_image; ?>" class="card-img-top img-fluid" alt="Ảnh phòng đặt" style="height: 180px; object-fit: cover;">
                 
                 <div class="card-body">
                     <h5 class="fw-bold text-dark mb-2"><?php echo $mock_room_name; ?></h5>

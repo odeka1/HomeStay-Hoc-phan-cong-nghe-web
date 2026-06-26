@@ -1,6 +1,6 @@
 <?php
 // Cấu hình đường dẫn lùi lại 1 cấp thư mục để nhận đúng CSS/JS gốc
-$base_url = '../../';
+$base_url = '../';
 
 // Nhúng các thành phần giao diện hệ thống
 include_once '../components/header.php';

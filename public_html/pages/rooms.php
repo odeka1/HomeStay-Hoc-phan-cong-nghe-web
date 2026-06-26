@@ -1,6 +1,6 @@
 <?php
 // Cấu hình đường dẫn lùi lại 1 cấp thư mục để nhận đúng tài nguyên gốc
-$base_url = '../../';
+$base_url = '../';
 
 // Nhúng các thành phần giao diện hệ thống
 include_once '../components/header.php';
@@ -94,7 +94,7 @@ $result = $conn->query($sql);
                         ?>
                         <div class="col-12 col-md-6">
                             <div class="card h-100 shadow-sm border-0">
-                                <img src="../assets/images/rooms/<?php echo $row['image_name']; ?>" class="card-img-top img-fluid" alt="<?php echo $row['room_name']; ?>" style="height: 200px; object-fit: cover;">
+                                <img src="<?php echo $base_url; ?>assets/images/rooms/<?php echo $row['image_name']; ?>" class="card-img-top img-fluid" alt="<?php echo $row['room_name']; ?>" style="height: 200px; object-fit: cover;">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title fw-bold"><?php echo $row['room_name']; ?></h5>
                                     <p class="card-text text-muted small flex-grow-1"><?php echo $row['description']; ?></p>

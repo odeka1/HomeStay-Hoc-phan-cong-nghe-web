@@ -1,5 +1,5 @@
 <?php
-$base_url = '../../';
+$base_url = '../';
 include_once '../components/header.php';
 include_once '../components/navbar.php';
 ?>
@@ -21,7 +21,7 @@ include_once '../components/navbar.php';
             <p class="text-secondary">Mọi căn phòng tại CozyStay đều được kiểm duyệt kỹ lưỡng về độ an toàn, tiện nghi và phong cách thiết kế trước khi đưa lên nền tảng website phục vụ du khách.</p>
         </div>
         <div class="col-12 col-md-6">
-            <img src="<?php echo $base_url; ?>public_html/assets/images/about_us.png" class="img-fluid rounded shadow" alt="Về chúng tôi">
+            <img src="<?php echo $base_url; ?>assets/images/about_us.png" class="img-fluid rounded shadow" alt="Về chúng tôi">
         </div>
     </div>
 
