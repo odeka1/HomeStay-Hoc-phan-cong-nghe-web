@@ -30,9 +30,9 @@ if (!isset($base_url)) {
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="<?php echo $base_url; ?>pages/rooms.php">Tất Cả Phòng</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Phòng Đơn Standard</a></li>
-                        <li><a class="dropdown-item" href="#">Phòng Đôi Deluxe</a></li>
-                        <li><a class="dropdown-item" href="#">Phòng Gia Đình VIP</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $base_url; ?>pages/rooms.php?room_type=single">Phòng Đơn Standard</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $base_url; ?>pages/rooms.php?room_type=double">Phòng Đôi Deluxe</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $base_url; ?>pages/rooms.php?room_type=family">Phòng Gia Đình VIP</a></li>
                     </ul>
                 </li>
                 
@@ -48,6 +48,32 @@ if (!isset($base_url)) {
                 <input class="form-control me-2" type="search" name="search" placeholder="Tìm phòng nhanh..." aria-label="Search">
                 <button class="btn btn-outline-success text-white border-white" type="submit">Tìm</button>
             </form>
+
+            <div class="d-flex align-items-center gap-3 ms-lg-3 mt-3 mt-lg-0">
+                <?php
+                // 🔴 BACKEND: Giả định trạng thái đăng nhập để test giao diện
+                $is_logged_in = false; // Đổi sang 'true' để xem giao diện sau khi đăng nhập thành công
+                $session_username = "Nguyễn Văn A"; 
+                ?>
+
+                <?php if ($is_logged_in == false): ?>
+                    <a href="<?php echo $base_url; ?>pages/login.php" class="btn btn-link link-light text-decoration-none small px-2">Đăng Nhập</a>
+                    <a href="<?php echo $base_url; ?>pages/register.php" class="btn btn-success btn-sm fw-bold px-3 py-1.5 rounded-pill">Đăng Ký</a>
+                <?php else: ?>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white small fw-bold" href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            👋 Xin chào, <?php echo $session_username; ?>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
+                            <li><a class="dropdown-item small" href="#">Lịch sử đặt phòng</a></li>
+                            <li><a class="dropdown-item small" href="#">Cập nhật hồ sơ</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item small text-danger fw-bold" href="<?php echo $base_url; ?>pages/login.php?action=logout">Đăng Xuất</a></li>
+                        </ul>
+                    </div>
+                <?php endif; ?>
+            </div>
+
         </div>
     </div>
 </nav>

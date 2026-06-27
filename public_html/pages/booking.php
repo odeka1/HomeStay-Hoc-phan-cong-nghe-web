@@ -122,42 +122,43 @@ if ($result_room && $result_room->num_rows > 0) {
                     <div class="row g-3">
                         <div class="col-12 col-md-6">
                             <label for="guestName" class="form-label small fw-bold text-secondary">Họ và tên khách hàng *</label>
-                            <input type="text" class="form-control" id="guestName" name="guest_name" placeholder="Nhập tên người đại diện nhận phòng" required>
+                            <input type="text" class="form-control" id="guestName" name="guest_name" placeholder="Nhập tên người đại diện nhận phòng" value="<?php echo isset($_POST['guest_name']) ? htmlspecialchars($_POST['guest_name']) : ''; ?>" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="guestPhone" class="form-label small fw-bold text-secondary">Số điện thoại di động *</label>
-                            <input type="tel" class="form-control" id="guestPhone" name="guest_phone" placeholder="Nhập số điện thoại để xác nhận đơn" required>
+                            <input type="tel" class="form-control" id="guestPhone" name="guest_phone" placeholder="Nhập số điện thoại để xác nhận đơn" value="<?php echo isset($_POST['guest_phone']) ? htmlspecialchars($_POST['guest_phone']) : ''; ?>" required>
                         </div>
 
                         <div class="col-12">
                             <label for="guestEmail" class="form-label small fw-bold text-secondary">Địa chỉ Email liên hệ *</label>
-                            <input type="email" class="form-control" id="guestEmail" name="guest_email" placeholder="Ví dụ: nguyenvana@gmail.com" required>
+                            <input type="email" class="form-control" id="guestEmail" name="guest_email" placeholder="Ví dụ: nguyenvana@gmail.com" value="<?php echo isset($_POST['guest_email']) ? htmlspecialchars($_POST['guest_email']) : ''; ?>" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="checkInDate" class="form-label small fw-bold text-secondary">Ngày nhận phòng (Check-in) *</label>
-                            <input type="date" class="form-control" id="checkInDate" name="check_in" required>
+                            <input type="date" class="form-control" id="checkInDate" name="check_in" value="<?php echo isset($_POST['check_in']) ? htmlspecialchars($_POST['check_in']) : ''; ?>" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="checkOutDate" class="form-label small fw-bold text-secondary">Ngày trả phòng (Check-out) *</label>
-                            <input type="date" class="form-control" id="checkOutDate" name="check_out" required>
+                            <input type="date" class="form-control" id="checkOutDate" name="check_out" value="<?php echo isset($_POST['check_out']) ? htmlspecialchars($_POST['check_out']) : ''; ?>" required>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <label for="guestCount" class="form-label small fw-bold text-secondary">Số lượng khách lưu trú *</label>
                             <select class="form-select" id="guestCount" name="guest_count">
-                                <option value="1" selected>1 Người lớn</option>
-                                <option value="2">2 Người lớn</option>
-                                <option value="3">3 Người lớn + 1 Trẻ em</option>
-                                <option value="4">Cả gia đình (Bốn người trở lên)</option>
+                                <?php $selected_count = isset($_POST['guest_count']) ? intval($_POST['guest_count']) : 1; ?>
+                                <option value="1" <?php echo $selected_count === 1 ? 'selected' : ''; ?>>1 Người lớn</option>
+                                <option value="2" <?php echo $selected_count === 2 ? 'selected' : ''; ?>>2 Người lớn</option>
+                                <option value="3" <?php echo $selected_count === 3 ? 'selected' : ''; ?>>3 Người lớn + 1 Trẻ em</option>
+                                <option value="4" <?php echo $selected_count === 4 ? 'selected' : ''; ?>>Cả gia đình (Bốn người trở lên)</option>
                             </select>
                         </div>
 
                         <div class="col-12">
                             <label for="bookingNotes" class="form-label small fw-bold text-secondary">Yêu cầu đặc biệt bổ sung (Không bắt buộc)</label>
-                            <textarea class="form-control" id="bookingNotes" name="booking_notes" placeholder="Ví dụ: Giờ check-in dự kiến, thuê thêm xe máy, chuẩn bị bếp nướng BBQ..." style="height: 100px"></textarea>
+                            <textarea class="form-control" id="bookingNotes" name="booking_notes" placeholder="Ví dụ: Giờ check-in dự kiến, thuê thêm xe máy, chuẩn bị bếp nướng BBQ..." style="height: 100px"><?php echo isset($_POST['booking_notes']) ? htmlspecialchars($_POST['booking_notes']) : ''; ?></textarea>
                         </div>
 
                         <div class="col-12 my-3">

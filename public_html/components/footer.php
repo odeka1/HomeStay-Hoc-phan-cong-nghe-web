@@ -27,7 +27,7 @@ if (!isset($base_url)) {
 
             <div class="col-12 col-sm-6 col-md-4">
                 <h5 class="fw-bold text-white mb-3">Thông Tin Liên Hệ</h5>
-                <p class="small text-white-50 mb-2">📍 Địa chỉ: Khu Đô Thị Đại Học, TP. Cần Thơ</p>
+                <p class="small text-white-50 mb-2">📍 Địa chỉ: CTUET, TP. Cần Thơ</p>
                 <p class="small text-white-50 mb-2">📞 Điện thoại: 0123 456 789</p>
                 <p class="small text-white-50 mb-2">✉️ Email: contact@cozystay.id.vn</p>
             </div>
@@ -46,5 +46,6 @@ if (!isset($base_url)) {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <script src="<?php echo $base_url; ?>assets/js/main.js"></script>
+<script src="<?php echo $base_url; ?>assets/js/validation.js"></script>
 </body>
 </html>
